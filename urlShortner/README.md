@@ -1,0 +1,3 @@
+# URL Shortner
+
+The URL shortener project consists of one module that works together to create a web application that shortens long URLs. The main file, app, defines the application and its routes for handling incoming requests, while the database handles the interaction between the application and the database where URLs and their shortened versions are stored. Shortener generates unique shortened URLs from the long URLs and checks if a generated URL already exists in the database. The HTML templates, home.html and result.html, define the structure and layout of the home page and the result page where users can input URLs for shortening and see the shortened version respectively.
