@@ -30,8 +30,9 @@ app.get('/:shortUrl', async (req, res) => {
     url = await shortener1.getUrl(req.params.shortUrl);
     if (url === undefined || !url) {
       res.status(404).send('URL not found');
+    } else {
+      res.redirect(301, url);
     }
-    res.redirect(301, url);
   }
 });
 

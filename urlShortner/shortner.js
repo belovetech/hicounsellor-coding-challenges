@@ -1,4 +1,6 @@
-const Database = require('./database'); // Assuming database.js is in the same directory
+const Database = require('./database');
+
+LENGTH_OF_SHORTURL = 7;
 
 class Shortener {
   constructor() {
@@ -23,7 +25,7 @@ class Shortener {
     const alphaNumeric = '1234567890abcdefghijklmnopqrstuvwxyz';
     let shortUrl = '';
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < LENGTH_OF_SHORTURL; i++) {
       shortUrl += alphaNumeric[Math.floor(Math.random() * alphaNumeric.length)];
     }
 
